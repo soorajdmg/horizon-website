@@ -1,0 +1,128 @@
+.horizon-image {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(123, 74, 226, 0.08) 38.38%, rgba(73, 48, 136, 0.08) 71.4%, rgba(9, 14, 22, 0.08) 100%);
+}
+
+.horizon-image img {
+    width: 3000px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+}
+
+.about-text {
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+
+.about1 {
+    flex: 1;
+    width: 90vw;
+    height: auto;
+    margin: 4.5%;
+    margin-top: 10%;
+    border-radius: 36px;
+    border: 2px solid #7B4AE2;
+}
+
+.world-achivement-box {
+    border-radius: 10px;
+    border: 1px solid #7B4AE2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.world-achivement {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.world-achivement-box h1 {
+    color: #7B4AE2;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+}
+
+.world-achivement-box p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+
+    /* Smartphones */
+    .horizon-image {
+        flex-direction: column;
+        margin: 1vh;
+    }
+
+    .horizon-image img {
+        width: 100%;
+        border-radius: 1vh;
+        box-shadow: 2vb 2vb 2vb rgba(0, 0, 0, 0);
+    }
+
+    .about-text {
+        padding-left: 1vw;
+        font-size: 0.9rem;
+    }
+
+    .world-achivement-box {
+        margin: 3%;
+        margin-left: 4%;
+        flex-direction: 1 column;
+        padding: 3vb;
+    }
+
+
+    .middle {
+        margin-left: 10%;
+        size: 50%;
+        flex-direction: 1 column;
+        padding: 3vb;
+
+    }
+
+    .end {
+        margin-left: 10%;
+    }
+
+    .middle h1 {
+        font-size: 20rem;
+    }
+
+
+    .world-achivement-box h1 {
+        font-size: 1.8rem;
+        margin-right: 0.5vb;
+    }
+
+
+
+    .world-achivement-box p {
+        font-size: 0.8rem;
+    }
+}

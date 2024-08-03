@@ -1,0 +1,212 @@
+.empty-box {
+  height: 40vh;
+}
+
+.footer {
+  height: 100%;
+  color: white;
+  margin-bottom: 2.5vh;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 1rem;
+}
+
+#horizon-logo img {
+  height: 100px;
+  width: 100px;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+#cusat-logo img {
+  height: 120px;
+  width: 100px;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.college-name {
+  margin: 10px 0 0 2px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team-name {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 100px;
+  margin-left: 180px;
+  margin: 0 0 50px 150px;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+  border: none;
+  height: 1px;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.385);
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation ul li {
+  color: rgba(255, 255, 255, 0.7);
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.navigation ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+  .empty-box {
+    height: 40vh;
+  }
+
+  .footer {
+    height: 80%;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    /* Arrange items in a column */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 1rem;
+    margin-bottom: 4rem;
+    /* Add space between items */
+  }
+
+  .footer-logo img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .college-name {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30%;
+    /* Center align text */
+  }
+
+  .team-name {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    /* Center align text */
+    margin-bottom: 1rem;
+    /* Add space below the team name */
+  }
+
+  .footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    /* Center align text */
+    gap: 1.5rem;
+    margin-right: 45%;
+    margin-bottom: 100px;
+  }
+
+  hr {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer-bar {
+    display: flex;
+    flex-direction: column;
+    /* Arrange items in a column */
+    align-items: center;
+    /* Center items horizontally */
+    margin-left: 5%;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    /* Arrange items in a column */
+    list-style: none;
+    /* Remove default list styles */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    gap: 1rem;
+    /* Space between items */
+  }
+
+  .navigation li {
+    margin-left: 20%;
+    cursor: pointer;
+    /* Change cursor on hover */
+    text-align: center;
+    /* Center align text */
+  }
+
+  .footer-copyright {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-weight: 400;
+  }
+
+
+}

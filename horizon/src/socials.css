@@ -1,0 +1,210 @@
+.socials {
+  height: 100vh;
+  font-family: 'Arial';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social-box-1 {
+  height: 60vh;
+}
+
+.social-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.385);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.385);
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.lift-logo {
+  width: 155.6px;
+  flex-shrink: 0;
+  flex-basis: 30%;
+  max-width: 30%;
+}
+
+.lift-logo img {
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.social-detail-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.location svg {
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+
+.phoneandmail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.phone,
+.mail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.social-media p {
+  margin-top: 5px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.social-media-icons svg {
+  height: 25px;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.social-media-icons svg:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  opacity: 1;
+
+}
+
+.copyright-claim {
+  margin: 20px 80px 0 1008px;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: fit-content;
+  width: 1000px;
+}
+
+.copyright-claim p {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 480px) {
+  .socials {
+    height: 100vh;
+    color: white;
+    font-family: 'Arial';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .social-box-1 {
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .social-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100vw;
+  }
+
+  .lift-logo {
+    width: 100%;
+    /* Ensure the logo fits within the container */
+    max-width: 300px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the logo horizontally */
+    display: block;
+    /* Ensure the logo is displayed as a block element */
+  }
+
+  .social-detail-text {
+    flex: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 10px;
+    flex-wrap: wrap;
+
+  }
+
+  .location {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .phoneandmail {
+    gap: 3rem;
+  }
+
+  .phone,
+  .mail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin: 10%;
+  }
+
+  .copyright-claim {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    /* Adjust width to fit the container */
+  }
+
+}

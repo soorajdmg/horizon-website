@@ -1,0 +1,202 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background: transparent;
+    /* Semi-transparent white */
+    padding: 2vh;
+    padding-left: 1vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(50%);
+    display: flex;
+    justify-content: space-between;
+    /* Optional: adds a blur effect */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.logo {
+    height: 5.5vh;
+    /* Adjust the logo size */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar li {
+    display: inline;
+    padding: 1.8vb;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    margin: 1.5vmax;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+}
+
+.navbar a:active {
+    color: rgba(255, 255, 255, 0.129);
+}
+
+
+.navbar-team-name {
+    color: white;
+    text-align: left;
+}
+
+.search-box {
+    color: white;
+    width: 32%;
+    height: 7vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 4vb;
+    border: 0.2vb solid white;
+    padding-left: 2.1vb;
+    padding-right: 2.1vb;
+    margin: 18vh auto;
+}
+
+
+.search-box p {
+    font-size: 1.1rem;
+    /* Adjust size as needed */
+    color: #fff;
+    /* Text color */
+    margin: 0 0.0001vb;
+    /* Spacing around the text */
+    overflow: hidden;
+    /* Hide overflow */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    display: inline-block;
+    /* Allow for animations */
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 644px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        background: transparent;
+        /* Semi-transparent white */
+        padding: 2vh;
+        padding-left: 1vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        backdrop-filter: blur(50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .logo {
+        height: 5.5vh;
+    }
+
+    .navbar ul,
+    .navbar li,
+    .navbar a {
+        display: none;
+    }
+
+    .search-box {
+        margin: 5rem auto;
+        margin-top: 10rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .logo {
+        height: 5.5vh;
+    }
+}

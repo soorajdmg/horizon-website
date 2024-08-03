@@ -1,0 +1,230 @@
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.achiv-container {
+    margin: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+.achivement-1 {
+    width: 24vw;
+    border-radius: 2vh;
+    box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* Ensure relative positioning for child elements */
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+.achivement-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.achivement-img {
+    width: 100%;
+    border-radius: 4vh;
+    height: 400px;
+    background-size: cover;
+    display: block;
+    /* Prevent extra space below image */
+}
+
+.achievement-svg-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* Adjust size as needed */
+    height: 50px;
+    padding: 0;
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+.achievement-svg-background {
+    width: 50px;
+    /* Ensure background is the same size as container */
+    height: 50px;
+    background-color: #5834a5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-svg {
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    /* Adjust size as needed */
+    filter: brightness(0) invert(1);
+    /* Ensure visibility on purple background */
+    transition: transform 0.3s ease;
+    /* Smooth rotation effect */
+}
+
+/* Rotate the arrow on hover */
+.achievement-svg-container:hover .achievement-svg {
+    transform: rotate(90deg);
+    /* Adjust the angle as needed */
+}
+
+.tobutton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 2vh 8vh;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tobutton:hover {
+    background-color: #0056b3;
+}
+
+.achiv-date {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.achiv-desc {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.achiv-date {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.achiv-desc {
+    color: rgba(255, 255, 255, 0.66);
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .achiv-container {
+        margin: 5vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: hidden;
+        /* Prevent overflow */
+    }
+
+    .achivement-1 {
+        width: 100vw;
+        border-radius: 2vw;
+        box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.1);
+        text-align: end;
+        margin-bottom: 15%;
+    }
+
+    .achivement-frame {
+        position: relative;
+        width: 70%;
+        height: auto;
+        margin-left: 4%;
+    }
+
+    .achivement-frame img {
+        width: 100%;
+        border-radius: 4vh;
+        height: 50%;
+        background-size: cover;
+        display: block;
+        /* Prevent extra space below image */
+    }
+
+    .tobutton {
+        position: absolute;
+        bottom: 5vw;
+        right: 5vh;
+        background-color: #007bff;
+        color: #fff;
+        padding: 2vh 8vh;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .tobutton:hover {
+        background-color: #0056b3;
+    }
+
+    .achiv-date {
+        font-size: 18px;
+        width: 150px;
+        height: 40px;
+        margin-top: 25px;
+    }
+
+    .achiv-desc {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .achiv-date {
+        width: 180px;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .achiv-desc {
+        color: rgba(255, 255, 255, 0.66);
+        font-family: Poppins;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+    }
+}
