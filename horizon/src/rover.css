@@ -7,14 +7,15 @@
 .rover-carousel-container {
     width: 65%;
     margin: 0 auto 5rem auto;
-    background: rgba(107, 107, 107, 0.279);
-    border: 2px;
-    border-color: white;
+    background: rgba(123, 74, 226, 0.08);
+    border: 2px solid rgb(123, 74, 226);
+    /* Purple border */
     border-radius: 10px;
     overflow: hidden;
     padding: 1rem;
     position: relative;
 }
+
 
 .rover-carousel {
     overflow: hidden;
@@ -148,7 +149,7 @@
     color: #fff;
     font-size: 45%;
     background: rgba(0, 0, 0, 0.5);
-    width:  20vmax;
+    width: 20vmax;
     padding: 2% 1rem;
     border-radius: 5px;
 }

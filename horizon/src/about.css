@@ -35,7 +35,7 @@
 
 .world-achivement-box {
     border-radius: 10px;
-    border: 1px solid #7B4AE2;
+    border: 1px solid rgb(123, 74, 226);
     padding: 20px;
     display: flex;
     justify-content: space-between;
