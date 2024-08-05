@@ -12,7 +12,7 @@ function NextArrow(props) {
     const { onClick } = props;
     return (
         <div className="custom-next-arrow" onClick={onClick}>
-            →
+            <i className='bx bx-right-arrow'></i>
         </div>
     );
 }
@@ -21,14 +21,13 @@ function PrevArrow(props) {
     const { onClick } = props;
     return (
         <div className="custom-prev-arrow" onClick={onClick}>
-            ←
+            <i className='bx bx-left-arrow'></i>
         </div>
     );
 }
 
 export default function Rover() {
     const settings = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -40,7 +39,7 @@ export default function Rover() {
     return (
         <>
             <div className="atext">ROVER</div>
-            <div className="rover-carousel">
+            <div className="rover-carousel-container">
                 <Slider {...settings}>
                     <div className="rover-image">
                         <img src={roverimage1} alt="RoverImage1" />
@@ -52,7 +51,6 @@ export default function Rover() {
                         <img src={roverimage3} alt="RoverImage3" />
                     </div>
                 </Slider>
-                <div className="swipe-indicator">Swipe to see more</div>
             </div>
         </>
     );
