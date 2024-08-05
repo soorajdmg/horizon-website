@@ -35,11 +35,7 @@
     cursor: pointer;
     color: white;
     z-index: 10;
-    /* Ensure arrows are on top */
     position: absolute;
-    /* For precise positioning */
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .custom-prev-arrow {
@@ -150,8 +146,9 @@
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    font-size: 1rem;
+    font-size: 45%;
     background: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem 1rem;
+    width:  20vmax;
+    padding: 2% 1rem;
     border-radius: 5px;
 }
