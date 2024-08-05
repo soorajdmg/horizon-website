@@ -8,23 +8,23 @@ import roverimage1 from '../assets/rover1.png';
 import roverimage2 from '../assets/rover1.png';
 import roverimage3 from '../assets/rover1.png';
 
-function NextArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="custom-next-arrow" onClick={onClick}>
-            <i className='bx bx-right-arrow'></i>
-        </div>
-    );
-}
+// function NextArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="custom-next-arrow" onClick={onClick}>
+//             {/* <i className='bx bx-right-arrow'></i> */}
+//         </div>
+//     );
+// }
 
-function PrevArrow(props) {
-    const { onClick } = props;
-    return (
-        <div className="custom-prev-arrow" onClick={onClick}>
-            <i className='bx bx-left-arrow'></i>
-        </div>
-    );
-}
+// function PrevArrow(props) {
+//     const { onClick } = props;
+//     return (
+//         <div className="custom-prev-arrow" onClick={onClick}>
+//             {/* <i className='bx bx-left-arrow'></i> */}
+//         </div>
+//     );
+// }
 
 export default function Rover() {
     const settings = {
@@ -32,8 +32,8 @@ export default function Rover() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+        // nextArrow: <NextArrow />,
+        // prevArrow: <PrevArrow />,
     };
 
     return (
@@ -51,6 +51,7 @@ export default function Rover() {
                         <img src={roverimage3} alt="RoverImage3" />
                     </div>
                 </Slider>
+                <div className="swipe-indicator">Swipe to see more >></div>
             </div>
         </>
     );
