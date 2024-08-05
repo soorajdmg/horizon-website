@@ -8,13 +8,15 @@
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 .rover-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: fit-content;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .rover-image img {
@@ -28,7 +30,7 @@
 .slick-next {
     width: 40px;
     height: 40px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .slick-prev:before,
@@ -90,4 +92,49 @@
         left: 50px;
         top: 200vh;
     }
+}
+
+/* Custom arrows */
+.custom-prev-arrow,
+.custom-next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.custom-prev-arrow {
+    left: -50px;
+}
+
+.custom-next-arrow {
+    right: -50px;
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Swipe indicator */
+.swipe-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }

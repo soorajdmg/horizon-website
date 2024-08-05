@@ -1,12 +1,30 @@
 import React from 'react';
 import Slider from 'react-slick';
 import '../rover.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import roverimage from '../assets/rover.png';
-import roverimage2 from '../assets/rover.png';
-import roverimage3 from '../assets/rover.png';
+import roverimage1 from '../assets/rover1.png';
+import roverimage2 from '../assets/rover1.png';
+import roverimage3 from '../assets/rover1.png';
+
+function NextArrow(props) {
+    const { onClick } = props;
+    return (
+        <div className="custom-next-arrow" onClick={onClick}>
+            →
+        </div>
+    );
+}
+
+function PrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <div className="custom-prev-arrow" onClick={onClick}>
+            ←
+        </div>
+    );
+}
 
 export default function Rover() {
     const settings = {
@@ -22,41 +40,20 @@ export default function Rover() {
     return (
         <>
             <div className="atext">ROVER</div>
-            <div className='rover-carousel'>
+            <div className="rover-carousel">
                 <Slider {...settings}>
-                    <div className='rover-image'>
-                        <img src={roverimage} alt="RoverImage1" />
+                    <div className="rover-image">
+                        <img src={roverimage1} alt="RoverImage1" />
                     </div>
-                    <div className='rover-image'>
+                    <div className="rover-image">
                         <img src={roverimage2} alt="RoverImage2" />
                     </div>
-                    <div className='rover-image'>
+                    <div className="rover-image">
                         <img src={roverimage3} alt="RoverImage3" />
                     </div>
                 </Slider>
+                <div className="swipe-indicator">Swipe to see more</div>
             </div>
         </>
-    );
-}
-
-function NextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: 'block', background: 'black' }}
-            onClick={onClick}
-        />
-    );
-}
-
-function PrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-        <div
-            className={className}
-            style={{ ...style, display: 'block', background: 'black' }}
-            onClick={onClick}
-        />
     );
 }
