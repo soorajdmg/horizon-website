@@ -71,56 +71,54 @@
     text-align: left;
 }
 
-@media (max-width: 480px) {
-
-    /* Smartphones */
+@media (max-width: 768px) {
     .horizon-image {
         flex-direction: column;
-        margin: 1vh;
+        margin: 15px;
+    }
+
+    .about-text {
+        padding-left: 10px;
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    .world-achivement-box h1 {
+        font-size: 48px;
+    }
+
+    .world-achivement-box p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizon-image {
+        flex-direction: column;
+        margin: 10px;
     }
 
     .horizon-image img {
         width: 100%;
-        border-radius: 1vh;
-        box-shadow: 2vb 2vb 2vb rgba(0, 0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
     }
 
     .about-text {
-        padding-left: 1vw;
+        padding-left: 5px;
         font-size: 0.9rem;
+        margin-left: 10px;
     }
 
     .world-achivement-box {
         margin: 3%;
-        margin-left: 4%;
-        flex-direction: 1 column;
-        padding: 3vb;
+        padding: 10px;
     }
-
-
-    .middle {
-        margin-left: 10%;
-        size: 50%;
-        flex-direction: 1 column;
-        padding: 3vb;
-
-    }
-
-    .end {
-        margin-left: 10%;
-    }
-
-    .middle h1 {
-        font-size: 20rem;
-    }
-
 
     .world-achivement-box h1 {
         font-size: 1.8rem;
-        margin-right: 0.5vb;
+        margin-right: 10px;
     }
-
-
 
     .world-achivement-box p {
         font-size: 0.8rem;

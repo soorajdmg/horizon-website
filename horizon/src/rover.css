@@ -1,29 +1,40 @@
+.atext {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.rover-carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .rover-image {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
 }
 
 .rover-image img {
-    width: 700px;
-    max-width: 100%;
-    height: auto;
-}
-
-.line2 {
-    width: 446px;
-    height: 116px;
-    flex-shrink: 0;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
-    border: 1px solid #7B4AE2;
-    max-width: 100%;
 }
 
-.line1 {
-    height: 1px;
-    width: 480px;
-    background: #7B4AE2;
-    max-width: 100%;
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    color: black;
 }
 
 .linebox {
@@ -35,69 +46,28 @@
     align-items: center;
 }
 
-@media (max-width: 480px) {
-    .rover-image {
-        display: flex;
-        margin-top: 10%;
-        margin-bottom: 130%;
-    }
+.line1 {
+    height: 1px;
+    width: 480px;
+    background: #7B4AE2;
+    max-width: 100%;
+}
 
-    .rover-image img {
-        width: 700px;
-    }
-
-    .line2 {
-        width: 20%;
-        height: 116px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        border: 1px solid #7B4AE2;
-        opacity: 0;
-    }
-
-    .line1 {
-        height: 2px;
-        width: 5%;
-        transform: rotateX(90deg);
-        background: #7B4AE2;
-        opacity: 0;
-    }
-
-    .linebox {
-        position: absolute;
-        left: 10%;
-        top: 475%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-    }
-
-
-    .line2 {
-        width: 350px;
-    }
-
-    .line1 {
-        width: 350px;
-    }
-
-    .linebox {
-        left: 150px;
-        top: 300vh;
-    }
+.line2 {
+    width: 446px;
+    height: 116px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #7B4AE2;
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
-    .rover-image img {
-        width: 400px;
-    }
-
-    .line2 {
+    .line1 {
         width: 300px;
     }
 
-    .line1 {
+    .line2 {
         width: 300px;
     }
 
@@ -108,15 +78,11 @@
 }
 
 @media (max-width: 480px) {
-    .rover-image img {
-        width: 100%;
-    }
-
-    .line2 {
+    .line1 {
         width: 250px;
     }
 
-    .line1 {
+    .line2 {
         width: 250px;
     }
 

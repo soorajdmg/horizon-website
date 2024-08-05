@@ -32,6 +32,18 @@
     overflow-y: hidden;
 }
 
+@media (max-width: 768px) {
+    .sponser {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        /* Space between boxes */
+    }
+
+    .atext.sponser-heading {
+        margin: 0;
+    }
+}
+
 @media (max-width: 480px) {
     .sponser {
         display: flex;
@@ -59,13 +71,5 @@
     .sponser-box {
         width: 120px;
         height: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sponser {
-        flex-direction: column;
-        margin-bottom: 1rem;
-        /* Space between boxes */
     }
 }
